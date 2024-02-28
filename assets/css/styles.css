@@ -39,7 +39,7 @@ body {
 .logo-1 {
   color: white;
   animation: neon 3s infinite;
-  font-size: 45px;
+  font-size: 35px;
   text-transform: uppercase;
   font-family: "Archivo Black", "Archivo", sans-serif;
   font-weight: normal;
@@ -51,7 +51,7 @@ body {
 .logo-2 {
   color: rgb(74, 61, 75);
   animation: neon 3s infinite;
-  font-size: 45px;
+  font-size: 40px;
   text-transform: uppercase;
   font-family: "Archivo Black", "Archivo", sans-serif;
   font-weight: normal;
