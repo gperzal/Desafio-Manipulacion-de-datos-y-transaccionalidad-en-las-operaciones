@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío -
+        Manipulación de datos y
+        transaccionalidad en las operaciones</title>
+    <!-- Enlace CDN de Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" </head>
+
+<body>
+
+    <div class='content container text-center p-5 mb-5'>
+        <p class="logo-1">
+            DesafíoLatam - M5
+
+        </p>
+
+        <p class="logo-2">
+            Guido Perez Zelaya - G64 - 2024
+
+        </p>
+    </div>
+
+
+
+    <div class="accordion container" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button bg-dark text-white fs-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    Enunciados
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                    <div class="card  border-primary  text-white">
+                        <div class="card-header text-white bg-primary">Crear Base de datos</div>
+                        <div class="card-body ">
+                            <h5 class="card-title">Crear una base de datos llamada
+                                desafio2-tuNombre-tuApellido-3digitos</h5>
+                            <p class=" card-text">Creamos una base de datos llamada desafio_guido_perez.</p>
+                        </div>
+                        <img src="./assets/img/database.png" class="card-img-bottom" alt="...">
+                    </div>
+
+                    <!-- Crear Tabla -->
+                    <div class="card  border-primary mt-5 text-white">
+                        <div class="card-header bg-primary">Crear Tabla </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Crear una tabla segun indica el enunciado</h5>
+                            <p class="card-text">Creamos una tabla llamada inscritos</p>
+                        </div>
+                        <img src="./assets/img/table.png" class="card-img-bottom" alt="...">
+                    </div>
+
+                    <!-- Insertar  -->
+                    <div class="card  border-primary mt-5 text-white">
+                        <div class="card-header bg-primary">Insertar Registros </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Insertar registros segun indica el enunciado</h5>
+                            <p class="card-text">Insertamos todos los registros del enunciado</p>
+                        </div>
+                        <img src="./assets/img/registros.png" class="card-img-bottom" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-dark text-white fs-5" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    Soluciones
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <!-- Pregunta 1 -->
+                    <div class="card  border-primary  text-white">
+                        <div class="card-header bg-primary">Pregunta 1</div>
+                        <div class="card-body">
+                            <h5 class="card-title">¿Cuántos registros hay?</h5>
+                            <p class="card-text">Para contar el número total de registros en la tabla INSCRITOS, se
+                                puede usar la
+                                función COUNT(). </p>
+                        </div>
+                        <img src="./assets/img/1.png" class="card-img-bottom" alt="...">
+                    </div>
+
+                    <!-- Pregunta 2 -->
+                    <div class="card border-primary mt-5  text-white ">
+                        <div class="card-header  bg-primary">Pregunta 2</div>
+                        <div class="card-body ">
+                            <h5 class="card-title">¿Cuántos inscritos hay en total?</h5>
+                            <p class="card-text">Para sumar el total de inscritos de todos los registros, se utiliza la
+                                función
+                                SUM() sobre la columna cantidad.</p>
+                        </div>
+                        <img src="./assets/img/2.png" class="card-img-bottom" alt="...">
+                    </div>
+                    <!-- Pregunta 3 -->
+                    <div class="card mt-5 border-primary text-white">
+                        <div class="card-header  bg-primary">Pregunta 3</div>
+                        <div class="card-body">
+                            <h5 class="card-title">¿Cuál o cuáles son los registros de mayor antigüedad?</h5>
+                            <p class="card-text">
+                                Para encontrar los registros más antiguos, podemos ordenar los resultados por la fecha
+                                en orden
+                                ascendente y luego seleccionar el registro superior.
+                                Para manejar posibles empates, se pueden usar subconsultas para encontrar todas las
+                                entradas que
+                                coincidan con la fecha más antigua.
+                            </p>
+                        </div>
+                        <img src="./assets/img/3.png" class="card-img-bottom" alt="...">
+                    </div>
+
+                    <!-- Pregunta 4 -->
+                    <div class="card mt-5 border-primary text-white">
+                        <div class="card-header  bg-primary ">Pregunta 4</div>
+                        <div class="card-body">
+                            <h5 class="card-title">¿Cuántos inscritos hay por día? (entendiendo un día como una fecha
+                                distinta de
+                                ahora en adelante)
+                            </h5>
+                            <p class="card-text">Para contar el número de inscritos por día, se agrupan los registros
+                                por la fecha y
+                                se suma la cantidad de inscritos para cada grupo.
+                            </p>
+                        </div>
+                        <img src="./assets/img/4.png" class="card-img-bottom" alt="...">
+                    </div>
+
+                    <!-- Pregunta 5 -->
+                    <div class="card mt-5 border-primary text-white">
+                        <div class="card-header  bg-primary">Pregunta 5</div>
+                        <div class="card-body">
+                            <h5 class="card-title">¿Qué día se inscribieron la mayor cantidad de personas y cuántas
+                                personas se
+                                inscribieron en ese día?</h5>
+                            <p class="card-text">Para encontrar el día con la mayor cantidad de inscritos, primero, se
+                                suman los
+                                inscritos por día como en la consulta anterior y luego se utiliza una subconsulta para
+                                seleccionar
+                                el día con el máximo número de inscritos.
+                            </p>
+                        </div>
+                        <img src="./assets/img/5.png" class="card-img-bottom" alt="...">
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="container mt-5 collapse" id="collapseExample">
+        <!-- Crear Base de datos -->
+
+    </div>
+    <div class="container mt-5 collapse" id="collapse2">
+
+
+
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+    <!-- Enlace CDN de Bootstrap JS y dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
